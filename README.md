@@ -15,7 +15,11 @@ Start the mock API from the directory containing the supplied `db.json` (for exa
 npx --yes json-server@0.17.4 --watch db.json --port 3001
 ```
 
-If the emulator or a physical device cannot reach the server, add `--host 0.0.0.0` to that command.
+If the Android emulator or a physical device cannot reach the server, stop it with `Ctrl+C` and use this fallback command:
+
+```sh
+npx --yes json-server@0.17.4 --watch db.json --host 0.0.0.0 --port 3001
+```
 
 In another terminal, from this repository:
 
